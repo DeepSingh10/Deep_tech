@@ -1,0 +1,55 @@
+@import
+url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{
+    display: block;
+    text-align: center;
+    margin-top: 4%;
+    color: rgb(0, 62, 48);
+}
+.head h3{
+    color: white;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem, 21rem));
+    gap:2rem;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.cards .card{
+    /* overflow: hidden; */
+    /* box-shadow: 0 2px 20px #e1e5ee; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.cards .card .img{
+  height: 400px;
+  width: 100%;
+  align-self: center;
+  object-fit:fill;
+  /* margin-bottom: 5%; */
+}
+.cards .body{
+    padding: 6px 6px;
+    /* height: 400px; */
+    width: 100%;
+    justify-content: center;
+}

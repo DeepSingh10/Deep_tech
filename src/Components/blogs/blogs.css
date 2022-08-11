@@ -1,0 +1,74 @@
+@import
+url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(12rem, 16rem));
+    gap:2rem;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+.cards .card{
+    overflow: hidden;
+    box-shadow: 0 2px 20px #e1e5ee;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.cards .card .img{
+  height:12rem;
+  width:100%;
+  object-fit:contain;
+}
+.cards .card .title{
+    padding: 1rem;
+    color: rgb(0, 62, 48);
+}
+.cards .card .description{
+    padding: 0 1rem;
+    color: white;
+}
+.cards .card .btn{
+   padding: 1rem;
+   margin-top: 2%;
+   margin-bottom: 3%;
+   font-family: inherit;
+   font-weight: bold;
+   font-size: 1rem;
+   /* border: 2px solid  #fe3647; */
+   background: transparent;
+   /* color: #ff4444; */
+   border-radius: 4px;
+   transition: background 200ms ease-in,color 200ms ease-in;
+   text-align: center;
+   width: 70%;
+   align-self: center;
+   padding: 15px 10px;
+   color: rgb(0, 62, 48);
+}
+
+
+.card:hover{
+    transform: scale(1.02);
+}
+.cards .card .btn:hover{
+    background: white;
+    color:rgb(4, 95, 87);
+}
